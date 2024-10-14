@@ -9,7 +9,7 @@
     "plugins": [
         "@typescript-eslint",
         "simple-import-sort",
-        "eslint-plugin-unicorn"
+        //"eslint-plugin-unicorn"
     ],
     "ignorePatterns": [],
     "rules": {
