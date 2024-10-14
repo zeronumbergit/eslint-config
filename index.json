@@ -1,23 +1,13 @@
 {
     "env": {
-        "browser": true,
         "es2020": true
     },
-    "extends": [
-        "plugin:react/recommended"
-    ],
     "parser": "@typescript-eslint/parser",
-    "settings": {
-        "react": {
-            "version": "detect"
-        }
-    },
     "parserOptions": {
         "sourceType": "module"
     },
     "plugins": [
         "@typescript-eslint",
-        "react",
         "simple-import-sort",
         "eslint-plugin-unicorn"
     ],
@@ -217,7 +207,6 @@
             {
                 "groups": [
                     [
-                        "^react",
                         "^@?\\w",
                         "^(components|modules|utils)(/.*|$)",
                         "^\\u0000",
@@ -228,58 +217,6 @@
                         "^\\./?$"
                     ]
                 ]
-            }
-        ],
-        "react/jsx-curly-brace-presence": [
-            "error",
-            {
-                "props": "never",
-                "children": "never"
-            }
-        ],
-        "react/no-typos": "error",
-        "react/react-in-jsx-scope": "off",
-        "react/self-closing-comp": "error",
-        "react/jsx-closing-tag-location": "error",
-        "react/jsx-equals-spacing": [
-            "error",
-            "never"
-        ],
-        "react/jsx-tag-spacing": [
-            "error",
-            {
-                "closingSlash": "never"
-            }
-        ],
-        "react/display-name": "off",
-        "react/prop-types": "off",
-        "react/jsx-indent": [
-            "error",
-            "tab"
-        ],
-        "react/jsx-curly-newline": [
-            "error",
-            {
-                "multiline": "require",
-                "singleline": "forbid"
-            }
-        ],
-        "react/jsx-first-prop-new-line": [
-            "error",
-            "multiline"
-        ],
-        "react/jsx-max-props-per-line": "error",
-        "react/jsx-one-expression-per-line": "error",
-        "react/jsx-wrap-multilines": [
-            "error",
-            {
-                "declaration": "parens-new-line",
-                "assignment": "parens-new-line",
-                "return": "parens-new-line",
-                "arrow": "parens-new-line",
-                "condition": "parens-new-line",
-                "logical": "parens-new-line",
-                "prop": "ignore"
             }
         ]
     }
