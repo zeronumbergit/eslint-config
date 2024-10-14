@@ -8,8 +8,7 @@
     },
     "plugins": [
         "@typescript-eslint",
-        "simple-import-sort",
-        //"eslint-plugin-unicorn"
+        "simple-import-sort"
     ],
     "ignorePatterns": [],
     "rules": {
